@@ -31,6 +31,8 @@ struct CardView: View {
                   endPoint: .bottom
                 )
             )
+
+            Spacer()
             
             Button {
               // ACTION: Show a Sheet
