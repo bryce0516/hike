@@ -94,7 +94,6 @@
 				B5FF84172A88E8B900DEB548 /* Screen */,
 				B51AE2A72A8128C300F98760 /* Utility */,
 				B59F96092A81219100D583E4 /* HikeApp.swift */,
-				B59F960B2A81219100D583E4 /* ContentView.swift */,
 				B51AE2A42A81274B00F98760 /* Component */,
 				B59F960D2A81219200D583E4 /* Assets.xcassets */,
 				B59F960F2A81219200D583E4 /* Preview Content */,
@@ -113,6 +112,7 @@
 		B5FF84172A88E8B900DEB548 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				B59F960B2A81219100D583E4 /* ContentView.swift */,
 				B5FF84182A88E8D000DEB548 /* SettingsView.swift */,
 			);
 			path = Screen;
@@ -322,8 +322,10 @@
 		B59F96152A81219200D583E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-MagnifyingGlass AppIcon-Campfire AppIcon-Map AppIcon-Mushroom AppIcon-Backpack AppIcon-Camera";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";
@@ -351,8 +353,10 @@
 		B59F96162A81219200D583E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-MagnifyingGlass AppIcon-Campfire AppIcon-Map AppIcon-Mushroom AppIcon-Backpack AppIcon-Camera";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hike/Preview Content\"";
