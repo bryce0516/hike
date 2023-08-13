@@ -14,33 +14,33 @@ struct SettingsView: View {
       
       Section {
         
-      
-      HStack {
-        Spacer()
-        Image(systemName: "laurel.leading")
-          .font(.system(size: 80, weight: .black))
-        VStack(spacing: -10) {
-          Text("Hike")
-            .font(.system(size: 66, weight: .black))
-          Text("Editors' Choice")
-            .fontWeight(.medium)
+        
+        HStack {
+          Spacer()
+          Image(systemName: "laurel.leading")
+            .font(.system(size: 80, weight: .black))
+          VStack(spacing: -10) {
+            Text("Hike")
+              .font(.system(size: 66, weight: .black))
+            Text("Editors' Choice")
+              .fontWeight(.medium)
+          }
+          Image(systemName: "laurel.trailing")
+            .font(.system(size: 80, weight: .black))
+          Spacer()
         }
-        Image(systemName: "laurel.trailing")
-          .font(.system(size: 80, weight: .black))
-        Spacer()
-      }
-      .foregroundStyle(
-        LinearGradient(
-          colors: [
-            .customGreenLight,
+        .foregroundStyle(
+          LinearGradient(
+            colors: [
+              .customGreenLight,
               .customGreenMedium,
               .customGreenDark
-          ],
-          startPoint: .top,
-          endPoint: .bottom
+            ],
+            startPoint: .top,
+            endPoint: .bottom
+          )
         )
-      )
-      .padding(.top, 8)
+        .padding(.top, 8)
         VStack(spacing: 8) {
           Text("Where can you find \nperfect tracks?")
             .font(.title2)
@@ -62,6 +62,39 @@ struct SettingsView: View {
       // MARK: SECTION: ICONS
       
       // MARK: SECTION: ABOUT
+      
+      Section(
+        header: Text(
+          "ABOUT THE APP"
+        ),
+        footer: HStack {
+          Spacer()
+          Text("Copyright @ All right reserved")
+          Spacer()
+        }
+          .padding(.vertical, 8)
+      ) {
+        // 1. Basic Labeled Content
+        // LabeledContent("Application", value: "Hike")
+        
+        // 2. Advanced Labeled Content
+        LabeledContent {
+          Text("Hike")
+        } label: {
+          HStack {
+            ZStack {
+              RoundedRectangle(cornerRadius: 8)
+                .frame(width: 30, height: 30)
+                .foregroundColor(.blue)
+              Image(systemName: "apps.iphone")
+                .foregroundColor(.white)
+                .fontWeight(.semibold)
+            }
+            Text("Application")
+          }
+        }
+        Text("List Row")
+      } //: SECTION
     } //: LIST
   }
 }
